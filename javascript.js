@@ -26,7 +26,8 @@
               "padding": 0,
               "margin": 0
             });
-
+            newTile.addClass("tile");
+            newTile.attr('id', rows + ',' + cols);
             $boardDiv.append(newTile);
 
           }
