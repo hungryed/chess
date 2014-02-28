@@ -51,8 +51,8 @@
 
         for (var i = 0; i < piecesInfo.length; i++) {
           var piece = piecesInfo[i]
-          divId = "#" + piece.row + "," + piece.col
-          tile = $(divId)
+          var divId = "#" + piece.row + "," + piece.col
+          var tile = $(divId)
           tile.html(this.symbols[piece.type + piece.color])
         }
         // i = 2
@@ -70,4 +70,4 @@
 $(document).ready(function () {
   var board = new Chess.Board($("#chess-board"));
   board.generateTiles();
-});
+})
