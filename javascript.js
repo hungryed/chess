@@ -123,11 +123,11 @@
       this.populateBoard = function (boardArray) {
 
         //place the kings
-        boardArray[0][4] = "kingblack";
+        boardArray[0][3] = "kingblack";
         boardArray[7][3] = "kingwhite";
 
         //place the queens
-        boardArray[0][3] = "queenblack";
+        boardArray[0][4] = "queenblack";
         boardArray[7][4] = "queenwhite";
 
         //place the rooks
